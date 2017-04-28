@@ -1,0 +1,28 @@
+I"(function() {
+  var User, user;
+
+  confirm("start");
+
+  Parse.initialize('HqPdSCfdrgxIhlVRTvgVSPYqVvoxwD9h8B7C6GTv', '7hEXq39F3vb45ML23Voie1m7U8qyhXoD6XOA60qD');
+
+  confirm("s2");
+
+  User = Parse.Object.extend('User');
+
+  user = new User;
+
+  user.set('username', 'RayLewis@live.com');
+
+  user.save(null, {
+    success: function(user) {
+      confirm("yes");
+      alert('New Object: ' + user.id);
+    },
+    error: function(user, error) {
+      confirm("no");
+      alert('Failed: ' + error.message);
+    }
+  });
+
+}).call(this);
+:ET

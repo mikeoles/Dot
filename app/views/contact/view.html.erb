@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% content_for :title, "Contact Dot" %>
+        <%= javascript_include_tag "contact-bundle" %>
+        <script src="//www.parsecdn.com/js/parse-1.6.12.min.js"></script>        
+    </head>
+    
+<section id="hire">
+    <p style="font-size: 20px">Contact Us</p>
+    
+    <form>
+      <div class="field name-box">
+        <input type="text" id="name" placeholder="Who Are You?"/>
+        <label for="name">Name</label>
+      </div>
+
+      <div class="field email-box">
+        <input type="text" id="email" placeholder="name@email.com"/>
+        <label for="email">Email</label>
+      </div>
+
+      <div class="field msg-box">
+        <textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+        <label for="msg">Msg</label>
+      </div>
+
+      <input id="messagesent" class="button" type="submit" value="Send" />
+  </form>
+</section>
+
+</html>

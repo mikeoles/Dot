@@ -1,0 +1,19 @@
+I"r(function() {
+  var TestObject, testObject;
+
+  confirm("hi");
+
+  Parse.initialize('HqPdSCfdrgxIhlVRTvgVSPYqVvoxwD9h8B7C6GTv', '7hEXq39F3vb45ML23Voie1m7U8qyhXoD6XOA60qD');
+
+  TestObject = Parse.Object.extend('TestObject');
+
+  testObject = new TestObject;
+
+  testObject.save({
+    foo: 'bar'
+  }).then(function(object) {
+    alert('yay! it worked');
+  });
+
+}).call(this);
+:ET

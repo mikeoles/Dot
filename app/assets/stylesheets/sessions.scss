@@ -1,0 +1,41 @@
+// Place all the styles related to the sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#forgotpw{
+    background-color: whitesmoke;
+    text-align: center;
+    width: 125px;
+    height: 20px;
+    margin: 100px auto auto auto;
+    opacity: .75;
+    font-family: arial;
+    border-radius: 5px;
+    padding-top: 1px;
+}
+
+#forgotpw a{
+    color: darkgoldenrod;
+}
+
+#canreset{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    font: arial;
+}
+
+
+
+.submitButton{
+  background-color: blue;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: cursive;
+  text-align: center;
+  margin: 0 auto;
+  color: #FFFFFF;
+  display: block; 
+  font-size: 18px;
+  text-transform: uppercase;
+}

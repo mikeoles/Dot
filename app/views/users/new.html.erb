@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <% content_for :title, "Join Dot" %>
+        <%= javascript_include_tag "user-bundle" %>
+        <script src="//www.parsecdn.com/js/parse-1.6.12.min.js"></script>
+    </head>
+    
+    <div class = "signup">
+      <div class="title">
+          <p>Sign Up</p>
+      </div>
+      <input id="name" placeholder="Full Name" type="text" />
+      <input id="email" placeholder="Email" type="text" />
+      <input id="password" placeholder="Password" type="password" />
+      <div class= "joinLink">
+        <a onclick="signup()" href="javascript:void(0);">Join</a>
+      </div>
+      <p id="signupupdate"></p>
+    </div>
+    
+    <div class="verify">
+      <p class = "update">Account not Verified. Check for verification code in email</p>
+      <p class="verTitle">Verification Code</p>
+      <input type="text" name="verCode" id="verCode">
+      <div class="verButton">
+        <a href="login" class="verLink">Verify</a> 
+      <div class= "joinLink">
+        <a onclick="resend()" href="javascript:void(0);">Resend</a>
+      </div>
+      </div>
+      <p id="signupupdate"></p>
+    </div>
+     
+</html>

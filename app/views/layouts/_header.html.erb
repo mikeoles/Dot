@@ -1,0 +1,19 @@
+
+    <div class="menuButton">
+        <%= image_tag("menuButton.png", :alt => "menuButton", :height => '30px', :width => '30px' ) %> 
+    </div>      
+    <div class="menuOptions">
+        <% if current_user %> 
+          <ul> 
+            <li> <a href="/forsale">Home</a> </li>              
+            <li> <%= current_user.name %> </li> 
+            <li> <%= link_to "Log out", logout_path, method: "delete" %> </li> 
+          </ul>
+        <% else %> 
+          <ul> 
+            <li> <a href="/forsale">Home</a> </li>  
+            <li> <%= link_to "Login", 'login' %></li> 
+            <li> <%= link_to "Signup", 'signup' %> </li> 
+          </ul> 
+        <% end %>
+    </div>  
